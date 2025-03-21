@@ -22,7 +22,6 @@ def filter_data(df, team, player):
         df = df[(df['team'] == team)]
     if player:
         df = df[(df['player'] == player)]
-
     return df
 
 filtered_df = filter_data(df, team, player)
@@ -47,3 +46,6 @@ def plot_shots(df, ax, pitch):
 plot_shots(filtered_df, ax, pitch)
 
 st.pyplot(fig)
+
+
+
